@@ -84,3 +84,30 @@ color: darkgray;
 .hero-content { max-width: 500px; width: 100%}
 .hero-content h1 {max-width: 14ch; margin-bottom: 0.5rem;}
 .hero-content button { margin-top: 0.75rem; }
+
+/* Shortener Styling */
+
+.shortener {
+  background-image: url("./images/bg-shorten-desktop.svg");
+  background-repeat: no-repeat; background-size: cover;  
+  background-color: hsl(257, 27%, 26%);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: -80px auto 60px;
+  display: flex; 
+  justify-content: center;
+}
+
+.shortener-form {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+  max-width: 600px;
+}
+
+.shortener-form input {
+padding: 0.75rem 1rem; border-radius: 5 px; border: none;    
+flex: 1;}
