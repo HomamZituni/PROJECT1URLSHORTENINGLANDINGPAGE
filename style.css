@@ -1,3 +1,9 @@
+
+
+* {
+  outline: 1px solid red;
+}
+
 /* CSS Reset Code */
 
 /* Intuitive box-sizing model */
@@ -75,24 +81,30 @@ color: darkgray;
 
 /* Hero Section Styling */
 .hero {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
-  padding: 80px 20px;
+display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 3rem;
+  justify-content: space-between;
+  padding: 80px 20px 0;
+  padding-bottom: 40px;
 }
 
-.hero-content { max-width: 500px; width: 100%}
+.hero-content { max-width: 500px; width: 100%;
+}
+
 .hero-content h1 {max-width: 14ch; margin-bottom: 0.5rem;}
-.hero-content button:hover { margin-top: 0.75rem;
+.hero-content button { margin-top: 0.75rem;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   border: none;
   background-color: hsl(180, 66%, 49%);
   color: white;
   font-weight: 700;
+  align-self: flex-start;
 }
 
-
+.hero-image { flex: 1; min-width: 300px; }
 
 /* Shortener Section Styling */
 
@@ -106,6 +118,7 @@ color: darkgray;
   margin: -80px auto 60px;
   display: flex; 
   justify-content: center;
+  margin-top: 3rem;
 }
 
 .shortener-form {
@@ -121,7 +134,7 @@ color: darkgray;
 padding: 0.75rem 1rem; border-radius: 5 px; border: none;    
 flex: 1;}
 
-.shortener-form button:hover {
+.shortener-form button {
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   border: none;
@@ -136,7 +149,7 @@ flex: 1;}
 
 /* Boost Section Styling */
 
-.boost-links button:hover {
+.boost-links button {
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   border: none;
