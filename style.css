@@ -41,7 +41,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 
-/* Styling for the header parent and child elements */
+/* Styling for the Header parent and child elements */
 
 .site-header {
 display: flex;
@@ -83,7 +83,7 @@ color: darkgray;
 
 .hero-content { max-width: 500px; width: 100%}
 .hero-content h1 {max-width: 14ch; margin-bottom: 0.5rem;}
-.hero-content button { margin-top: 0.75rem;
+.hero-content button:hover { margin-top: 0.75rem;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   border: none;
@@ -94,7 +94,7 @@ color: darkgray;
 
 
 
-/* Shortener Styling */
+/* Shortener Section Styling */
 
 .shortener {
   background-image: url("./images/bg-shorten-desktop.svg");
@@ -121,7 +121,22 @@ color: darkgray;
 padding: 0.75rem 1rem; border-radius: 5 px; border: none;    
 flex: 1;}
 
-.shortener-form button {
+.shortener-form button:hover {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  font-weight: 700;
+}
+
+
+
+
+
+/* Boost Section Styling */
+
+.boost-links button:hover {
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   border: none;
