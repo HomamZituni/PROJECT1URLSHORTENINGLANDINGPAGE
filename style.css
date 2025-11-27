@@ -55,7 +55,6 @@ margin: 0 auto;
 .site-header img {
 max-width: 100%;
 height: auto;
-
 }
 
 .site-header nav a {
@@ -73,3 +72,15 @@ gap: 1rem;
 text-decoration: none; 
 color: darkgray;
 }
+
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 80px 20px;
+}
+
+.hero-content { max-width: 500px; width: 100%}
+.hero-content h1 {max-width: 14ch; margin-bottom: 0.5rem;}
+.hero-content button { margin-top: 0.75rem; }
