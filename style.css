@@ -52,13 +52,24 @@ max-width: 1200px;
 margin: 0 auto;
 }
 
+.site-header img {
+max-width: 100%;
+height: auto;
+
+}
+
 .site-header nav a {
 margin-inline: 2rem;
 text-decoration: none;
+color: darkgray; 
 }
 
 .auth-links {
 display: flex;
 gap: 1rem;
+}
+
+.auth-links a {
 text-decoration: none; 
+color: darkgray;
 }
