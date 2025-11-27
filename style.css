@@ -1,0 +1,64 @@
+/* CSS Reset Code */
+
+/* Intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Add line-height and text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Project Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+body {
+font-family: 'Poppins', sans-serif;
+}
+
+
+/* Styling for the header parent and child elements */
+
+.site-header {
+display: flex;
+justify-content: space-between;
+align-items: center; 
+padding: 2rem 5%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.site-header nav a {
+margin-inline: 2rem;
+text-decoration: none;
+}
+
+.auth-links {
+display: flex;
+gap: 1rem;
+text-decoration: none; 
+}
