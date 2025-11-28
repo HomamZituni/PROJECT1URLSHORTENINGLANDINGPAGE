@@ -242,12 +242,11 @@ flex: 1; border-radius: 8px;}
 /* Footer Section STyling */
 
 .site-footer {
-  background-color: hsl(260, 8%, 14%);
+ background-color: hsl(260, 8%, 14%);
   color: white;
-  padding: 3rem 5%;
+  padding: 3rem 2rem;
   display: flex;
-  gap: 4rem;
-  justify-content: center;
+  align-items: flex-start;
 }
 
 .site-footer h3 {
@@ -264,4 +263,28 @@ flex: 1; border-radius: 8px;}
   text-decoration: none;
   color: hsl(0, 0%, 75%);
   font-size: 0.9rem;
+}
+
+.footer-logo {
+  display: block;
+  margin-right: 4rem;
+   max-width: 100%;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-wrap {
+  margin-right: 4rem; 
+  margin-left: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 4rem;
+  margin: 0 auto; 
 }
