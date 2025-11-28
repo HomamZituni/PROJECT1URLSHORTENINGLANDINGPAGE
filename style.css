@@ -347,3 +347,29 @@ margin: 0 auto;
 }
 
 
+/* Dynamic CSS from JS function */
+
+.results-wrapper {
+  max-width: 1100px;      
+  margin: 0 auto;         
+  padding: 0 1.5rem;      
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.result-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+
+
+
