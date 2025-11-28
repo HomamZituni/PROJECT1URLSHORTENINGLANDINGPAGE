@@ -44,6 +44,15 @@ shortenButton.addEventListener('click', async (event) => {
     return;
   }
 
+   try {
+    new URL(original);
+  } catch {
+    errorMessage.textContent = 'Please enter the full https URL';
+    input.classList.add('error');
+    return;
+  }
+
+
   errorMessage.textContent = '';
   input.classList.remove('error');
 

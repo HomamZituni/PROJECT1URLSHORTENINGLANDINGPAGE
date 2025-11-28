@@ -372,4 +372,14 @@ margin: 0 auto;
 }
 
 
+.error-message {
+  color: #f46262;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+input.error {
+  border: 2px solid #f46262;
+}
 
