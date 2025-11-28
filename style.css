@@ -181,10 +181,29 @@ flex: 1; border-radius: 8px;}
 
 
 .stat-block {
+ position: relative;
   background-color: white;
   border-radius: 8px;
-  padding: 2rem;
+  padding: 3.5rem 2rem 2rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stat-icon {
+  position: absolute;
+  top: -24px;
+  left: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: hsl(257, 27%, 26%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon img {
+  width: 24px;
+  height: 24px;
 }
 
 
