@@ -86,14 +86,16 @@ display: flex;
   align-items: center;
   gap: 3rem;
   justify-content: space-between;
-  padding: 80px 20px 0;
-  padding-bottom: 40px;
+  padding: 80px 20px 40px;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
 .hero-content { max-width: 500px; width: 100%;
+flex: 0 0 30%;
 }
 
-.hero-content h1 {max-width: 14ch; margin-bottom: 0.5rem;}
+.hero-content h1 {max-width: 14ch; margin-bottom: 0.5rem; font-size: 3rem;}
 .hero-content button { margin-top: 0.75rem;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
@@ -104,7 +106,7 @@ display: flex;
   align-self: flex-start;
 }
 
-.hero-image { flex: 1; min-width: 300px; }
+.hero-image { flex: 0 0 30%; min-width: 300px; }
 
 /* Shortener Section Styling */
 
@@ -118,7 +120,6 @@ display: flex;
   margin: -80px auto 60px;
   display: flex; 
   justify-content: center;
-  margin-top: 3rem;
 }
 
 .shortener-form {
@@ -131,7 +132,7 @@ display: flex;
 }
 
 .shortener-form input {
-padding: 0.75rem 1rem; border-radius: 5 px; border: none;    
+padding: 0.75rem 1rem; border-radius: 5px; border: none;    
 flex: 1;}
 
 .shortener-form button {
