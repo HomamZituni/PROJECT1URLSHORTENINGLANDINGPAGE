@@ -34,7 +34,7 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-/* Project Styling */
+/* Project Styling Global */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
@@ -44,7 +44,9 @@ body {
   color: hsl(257, 7%, 35%);
 }
 
-
+button {
+  cursor: pointer;
+}
 
 /* Styling for the Header parent and child elements */
 
