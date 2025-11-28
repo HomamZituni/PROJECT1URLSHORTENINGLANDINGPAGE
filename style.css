@@ -1,9 +1,5 @@
 
 
-* {
-  outline: 1px solid red;
-}
-
 /* CSS Reset Code */
 
 /* Intuitive box-sizing model */
@@ -43,8 +39,11 @@ p, h1, h2, h3, h4, h5, h6 {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 body {
-font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(257, 7%, 35%);
 }
+
 
 
 /* Styling for the Header parent and child elements */
@@ -78,6 +77,13 @@ gap: 1rem;
 text-decoration: none; 
 color: darkgray;
 }
+
+.site-header nav a,
+.auth-links a,
+.hero-content p {
+  color: hsl(257, 7%, 45%);
+}
+
 
 /* Hero Section Styling */
 .hero {
@@ -115,11 +121,13 @@ flex: 0 0 30%;
   background-repeat: no-repeat; background-size: cover;  
   background-color: hsl(257, 27%, 26%);
   padding: 30px;
-  border-radius: 10px;
-  max-width: 900px;
-  margin: -80px auto 60px;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: -40px auto 80px;
   display: flex; 
   justify-content: center;
+  overflow: hidden;
+  background-clip: padding-box;
 }
 
 .shortener-form {
@@ -133,17 +141,51 @@ flex: 0 0 30%;
 
 .shortener-form input {
 padding: 0.75rem 1rem; border-radius: 5px; border: none;    
-flex: 1;}
+flex: 1; border-radius: 8px;}
 
 .shortener-form button {
   padding: 0.75rem 1.5rem;
-  border-radius: 5px;
+  border-radius: 8px;
   border: none;
   background-color: hsl(180, 66%, 49%);
   color: white;
   font-weight: 700;
 }
 
+/*Stats Section Styling */
+
+.stats {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.stats-section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.stats-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.stats-section p {
+  max-width: 480px;
+  margin: 0 auto 3rem;
+  color: hsl(257, 7%, 45%);
+}
+
+
+
+.stat-block {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
 
 
 
