@@ -47,6 +47,11 @@ body {
 button {
   cursor: pointer;
 }
+.hero-content button,
+.shortener-form button,
+.boost-links button {
+  border-radius: 50px !important;
+}
 
 /* Styling for the Header parent and child elements */
 
@@ -86,6 +91,19 @@ color: darkgray;
   color: hsl(257, 7%, 45%);
 }
 
+.btn-primary {
+  padding: 0.4rem 1.4rem;   
+  border-radius: 50px;      
+  border: none;
+  background-color: hsl(180, 66%, 49%);
+  color: white !important;
+  font-weight: 700;
+  font-size: 0.95rem;        
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: -4px;
+}
+
 
 /* Hero Section Styling */
 .hero {
@@ -103,7 +121,7 @@ display: flex;
 flex: 0 0 30%;
 }
 
-.hero-content h1 {max-width: 14ch; margin-bottom: 0.5rem; font-size: 3rem;}
+.hero-content h1 {max-width: 14ch; margin-bottom: 0.5rem; font-size: 2.5rem; font-weight: 900; color:black !important}
 .hero-content button { margin-top: 0.75rem;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
@@ -286,5 +304,21 @@ flex: 1; border-radius: 8px;}
 .footer-links {
   display: flex;
   gap: 4rem;
-  margin: 0 auto; 
+  margin-left: auto; 
+}
+
+.footer-center {
+display: flex;
+gap: 4rem;
+margin: 0 auto;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social img {
+  width: 20px;
+  height: 20px;
 }
