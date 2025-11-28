@@ -1,6 +1,7 @@
 const shortenButton = document.querySelector('.shortener-form button')
 const input = document.querySelector('.shortener-form input')
 const resultsContainer = document.querySelector('.results')
+const errorMessage = document.querySelector('.error-message');
 
 
 function saveLink(original, short) {
@@ -37,7 +38,17 @@ document.addEventListener('DOMContentLoaded', loadLinks);
 shortenButton.addEventListener('click', async (event) => {
   event.preventDefault();
   const original = input.value.trim();
-  if (!original) return;
+  if (!original) {
+    errorMessage.textContent = 'Please add a link';
+    input.classList.add('error');
+    return;
+  }
+
+  errorMessage.textContent = '';
+  input.classList.remove('error');
+
+
+  
 
   const response = await fetch('https://api-ssl.bitly.com/v4/shorten', {
     method: 'POST',
@@ -52,7 +63,11 @@ shortenButton.addEventListener('click', async (event) => {
   });
 
   const data = await response.json();
-  const realShortUrl = data.link; // Bitly’s shortened link [web:4][web:5][web:37]
+  if (!response.ok) {
+  console.log('Bitly error:', data);
+  return;
+}
+  const realShortUrl = data.link; 
 
   const resultItem = document.createElement('div');
   resultItem.className = 'result-card';
