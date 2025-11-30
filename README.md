@@ -1,7 +1,7 @@
 URL Shortener Application
 
 A web application built as a first project.
--Insert Image here
+![url-shortener](https://github.com/user-attachments/assets/14b72503-5bc3-493f-885e-fbb0301e69ed)
 
 Description
 URL Shortener: A landing page with bitly API integration that allows user to shorten long URLs and list them out on the page with localstorage persistence. 
