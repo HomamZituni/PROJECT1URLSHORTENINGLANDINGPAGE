@@ -1,3 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const shortenButton = document.querySelector('.shortener-form button')
 const input = document.querySelector('.shortener-form input')
 const resultsContainer = document.querySelector('.results')
