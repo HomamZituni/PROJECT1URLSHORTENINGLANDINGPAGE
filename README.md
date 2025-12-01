@@ -7,11 +7,12 @@
 URL Shortener: A landing page with bitly API integration that allows user to shorten long URLs and list them out on the page with localstorage persistence. 
 
 ## Table of Contents
-* [Technologies Used] (#technologiesused)
-* [Features] (#features)
-* [Design] (#design)
-* [Deployed Application] (#deployment)
-* [About the Author] (#author)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Design](#design)
+- [Deployed Application](#deployed-application)
+- [About the Author](#about-the-author)
+
 
 
 ## <a name="technologiesused"></a>Technologies Used
