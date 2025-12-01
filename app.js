@@ -4,62 +4,66 @@ const input = document.querySelector('.shortener-form input'); // The input text
 const resultsContainer = document.querySelector('.results'); //The results card element 
 const errorMessage = document.querySelector('.error-message'); //the form validation messages element
 
-
-
-
-
-
+// Local Storage savelink function that adds new links as an object and saves as a string
 function saveLink(original, short) {
-  const links = JSON.parse(localStorage.getItem('links') || '[]');
-  links.push({ original, short });
-  localStorage.setItem('links', JSON.stringify(links));
-}
+    const links = JSON.parse(localStorage.getItem('links') || '[]');
+    links.push({ original, short});
+    localStorage.setItem('links', JSON.stringify(links));
+    }
 
+//Local Storage load link that re-converts strings into an object to be rendered into the UI and dynamically adds copy button at the end of each results card 
 function loadLinks() {
-  const links = JSON.parse(localStorage.getItem('links') || '[]');
+const links = JSON.parse(localStorage.getItem('links') || '[]');
 
-  links.forEach(({ original, short }) => {
-    const resultItem = document.createElement('div');
-    resultItem.className = 'result-card';
-    resultItem.innerHTML = `${original} => <a href="${short}" target="_blank">${short}</a>`;
+links.forEach(({ original, short}) => {
+const resultItem = document.createElement('div');
+resultItem.className = 'result-card';
+resultItem.innerHTML = `${original} <a href="${short}" target="_blank">${short}</a>`;
 
-    const copyBtn = document.createElement('button');
-    copyBtn.textContent = 'Copy';
-    copyBtn.addEventListener('click', () => {
-      navigator.clipboard.writeText(short).then(() => {
-        copyBtn.textContent = 'Copied!';
-        setTimeout(() => (copyBtn.textContent = 'Copy'), 2000);
-      });
-    });
+const copyBtn = document.createElement('button');
+copyBtn.textContent = 'Copy';
+copyBtn.addEventListener('click', () => {
+navigator.clipboard.writeText(short).then(() => {
+copyBtn.textContent = 'Copied!';
+setTimeout(() => (copyBtn.textContent = 'Copy'), 2000);
+}).catch(() => {
+copyBtn.textContent = 'Failed to copy';
+setTimeout(() => (copyBtn.textContent = 'Copy'), 2000); //added a catch block
+}); }); 
 
-    resultItem.appendChild(copyBtn);
-    resultsContainer.appendChild(resultItem);
-  });
+
+resultItem.appendChild(copyBtn);
+resultsContainer.appendChild(resultItem);
+});
 }
+
+
+// Shorten Button function for rendering links
+// code listens for shorten button click event, prevents default form submission, validates the URL, empty input = error. if not full link, another error will be shown. If valid, code will proceed. 
 
 document.addEventListener('DOMContentLoaded', loadLinks);
-
-
 shortenButton.addEventListener('click', async (event) => {
-  event.preventDefault();
-  const original = input.value.trim();
-  if (!original) {
+    event.preventDefault();
+    const original = input.value.trim();
+    if (!original) {
     errorMessage.textContent = 'Please add a link';
     input.classList.add('error');
     return;
-  }
+    }
 
-   try {
+    try {
     new URL(original);
-  } catch {
-    errorMessage.textContent = 'Please enter the full https URL';
+    } catch {
+    errorMessage.textContent= 'Please enter the full URL with http/https';
     input.classList.add('error');
     return;
-  }
+    }
+    
+    errorMessage.textContent = '';
+    input.classList.remove('error');
 
 
-  errorMessage.textContent = '';
-  input.classList.remove('error');
+
 
 
   
