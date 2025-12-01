@@ -72,17 +72,17 @@ View repo here: [Github.com](https://github.com/HomamZituni/PROJECT1URLSHORTENIN
 - Font weight: [https://www.w3schools.com/cssref/pr_font_weight.php](https://www.w3schools.com/cssref/pr_font_weight.php)
 - Media queries: [https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile](https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile)
 
-- DOM selector: [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector]
-- forEach: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach]
-- localStorage: [https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage]
-- CreateElement: [https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement]
-- event listener: [https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener]
-- URL validation:[https://developer.mozilla.org/en-US/docs/Web/API/URL]
-- event.preventdefault: [https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault]
-- async/await: [https://javascript.info/async-await]
-- writetext: [https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText]
-- fetch api: [https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API]
-- json stringify: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify]
-- response.json: [https://developer.mozilla.org/en-US/docs/Web/API/Response/json]
-- Bitly short API: [https://dev.bitly.com/api-reference#createBitlink]
-- clipboard api writetext:[https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText]
+- DOM selector: [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+- forEach: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+- localStorage: [https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- CreateElement: [https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+- event listener: [https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- URL validation:[https://developer.mozilla.org/en-US/docs/Web/API/URL](https://developer.mozilla.org/en-US/docs/Web/API/URL)
+- event.preventdefault: [https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
+- async/await: [https://javascript.info/async-await](https://javascript.info/async-await)
+- writetext: [https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText)
+- fetch api: [https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- json stringify: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+- response.json: [https://developer.mozilla.org/en-US/docs/Web/API/Response/json](https://developer.mozilla.org/en-US/docs/Web/API/Response/json)
+- Bitly short API: [https://dev.bitly.com/api-reference#createBitlink](https://dev.bitly.com/api-reference#createBitlink)
+- clipboard api writetext:[https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText)
