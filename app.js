@@ -1,7 +1,12 @@
-const shortenButton = document.querySelector('.shortener-form button')
-const input = document.querySelector('.shortener-form input')
-const resultsContainer = document.querySelector('.results')
-const errorMessage = document.querySelector('.error-message');
+// DOM Elements
+const shortenButton = document.querySelector('.shortener-form button'); //The shorten button element 
+const input = document.querySelector('.shortener-form input'); // The input textarea element
+const resultsContainer = document.querySelector('.results'); //The results card element 
+const errorMessage = document.querySelector('.error-message'); //the form validation messages element
+
+
+
+
 
 
 function saveLink(original, short) {
