@@ -37,8 +37,8 @@ Users can also create lists of previously created shortened URLs and delete them
 * Add user account option so link history syncs across devices vs localStorage
 
 ## <a name="deployment"></a>Deployed Link
-[Github Pages]
-([https://homamzituni.github.io/PROJECT1URLSHORTENINGLANDINGPAGE/])
+[Github Pages](https://homamzituni.github.io/PROJECT1URLSHORTENINGLANDINGPAGE/)
+
 
 * View Repo Here:
   [Github.com]
