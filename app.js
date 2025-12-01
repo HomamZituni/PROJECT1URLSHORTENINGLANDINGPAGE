@@ -102,7 +102,7 @@ navigator.clipboard.writeText(realShortUrl).then(() => {
 });
   resultItem.appendChild(copyBtn);
 
-  // Appends Card with urls, Saves the links, and then clears the input, adds copy button 
+  // Appends Card with urls and button, Saves the links, and then clears the input, adds copy button 
   resultsContainer.appendChild(resultItem);
   saveLink(original, realShortUrl);
   input.value = ''; });
