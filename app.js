@@ -39,7 +39,7 @@ resultsContainer.appendChild(resultItem);
 
 
 // Shorten Button function for rendering links
-// code listens for shorten button click event, prevents default form submission, validates the URL, empty input = error. if not full link, another error will be shown. If valid, code will proceed. 
+// code listens for shorten button click event, prevents default form submission, validates the URL, empty input = error. if not full link, another error will be shown. If valid, errors will clear and code will proceed. 
 
 document.addEventListener('DOMContentLoaded', loadLinks);
 shortenButton.addEventListener('click', async (event) => {
@@ -62,47 +62,51 @@ shortenButton.addEventListener('click', async (event) => {
     errorMessage.textContent = '';
     input.classList.remove('error');
 
+// BITLY API call that sends POST request to Bitly API endpoint with long URL by converting it into a string for the request body
+const response = await fetch ('https://api-ssl.bitly.com/v4/shorten', {
+method: 'POST',
+headers: {
+'Authorization':'Bearer 807d61f689cfe5d11236edc8d6471c7eb235dbe0',
+'Content-Type': 'application/json'
+},
+body: JSON.stringify({
+long_url: original,
+domain: 'bit.ly'
+})
+});
 
 
+// Response Handling that checks for errors and extracts short URL
 
+const data = await response.json();
+    if (!response.ok) {
+    console.log('Bitly error:', data);
+    return;
+    }
 
-  
+const realShortUrl = data.link; 
 
-  const response = await fetch('https://api-ssl.bitly.com/v4/shorten', {
-    method: 'POST',
-    headers: {
-      'Authorization': 'Bearer 807d61f689cfe5d11236edc8d6471c7eb235dbe0',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      long_url: original,
-      domain: 'bit.ly'
-    })
-  });
+// Render New Result Card that creates a card with URLs and copy button, copies the url to your clipboard and displays "Copied!" once the action is done
 
-  const data = await response.json();
-  if (!response.ok) {
-  console.log('Bitly error:', data);
-  return;
-}
-  const realShortUrl = data.link; 
+const resultItem = document.createElement('div');
+resultItem.className = 'result-card';
+resultItem.innerHTML = `${original} <a href= "${realShortUrl}" target="_blank">${realShortUrl}</a>`;
 
-  const resultItem = document.createElement('div');
-  resultItem.className = 'result-card';
-  resultItem.innerHTML = `${original} <a href="${realShortUrl}" target="_blank">${realShortUrl}</a>`;
-
-  const copyBtn = document.createElement('button');
-  copyBtn.textContent = 'Copy';
-  copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText(realShortUrl).then(() => {
-      copyBtn.textContent = 'Copied!';
-      setTimeout(() => copyBtn.textContent = 'Copy', 2000);
-    });
-  });
+const copyBtn = document.createElement('button');
+copyBtn.textContent= 'Copy';
+copyBtn.addEventListener('click', () => {
+navigator.clipboard.writeText(realShortUrl).then(() => {
+    copyBtn.textContent = 'Copied!';
+    setTimeout(() => copyBtn.textContent = 'Copy', 2000);
+});
+});
   resultItem.appendChild(copyBtn);
 
+  // Appends Card with urls, Saves the links, and then clears the input, adds copy button 
   resultsContainer.appendChild(resultItem);
   saveLink(original, realShortUrl);
-  input.value = '';
-});
+  input.value = ''; });
+
+  resultItem.appendChild(copyBtn);
+
 
